@@ -1,0 +1,627 @@
+/* index */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.wrapper {
+    padding: 20px;
+    border: 0px solid #ccc;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+header {
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 75px 0;
+    background-color: #000000;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: crimson;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: crimson;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+
+}
+nav ul {
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: crimson;
+}
+main {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    box-shadow: 0 0 2px grey;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+}
+
+footer {
+    background-color: #000000;
+    color: gray;
+    padding: 10px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.contact-info, .social-media {
+    flex: 1;
+}
+
+.contact-info h2, .social-media h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: crimson;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.social-media ul {
+    padding: 0;
+    list-style: none;
+}
+
+.social-media li {
+    margin-bottom: 5px;
+}
+
+.copyright {
+    color: crimson;
+    margin-top: 20px;
+    text-align: center;
+}
+.contact-info a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+    grid-gap: 20px; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* grid styles */
+.grid-item {
+    border: 1px solid #ccc;
+    color: crimson;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.grid-item img {
+    height: auto;
+    max-width: 100%; 
+}
+@media (max-width: 768px) {
+    .container {
+        gap: 5px;
+        grid-template-columns: 50% 50%; 
+    }
+}
+
+
+
+
+
+/* CSS for the carousel */
+.carousel {
+    overflow: hidden;
+    max-width: 100%; 
+}
+
+.slideshow {
+    box-shadow: 0 0 20px black;
+    display: flex;
+    transition: transform 5s ease-in-out;
+}
+
+.slideshow > div {
+    flex: 0 0 100%;
+}
+
+.slideshow img {
+    width: 100%; 
+    height: auto;
+}
+
+
+
+
+/* Search container */
+.search-container {
+    justify-content: center;
+    display: flex;
+    margin: 30px;
+    align-items: center;
+}
+
+
+#search {
+    outline: none;
+    border-radius: 4px;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #b3002d;
+}
+
+button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+
+/* creator page*/
+.creator-information h2{
+    padding: 20px 20px;
+    color: #b3002d;
+}
+.creator-information p{
+    padding: 10px 20px;
+}
+
+
+
+/* unieke code voor detailpage*/
+
+/* detail */
+.detail-title{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    padding: 20px;
+}
+.detail-container{
+    box-shadow: 0 0 2px grey;
+}
+.detail-title h1{
+    color: #b3002d;
+}
+.detail-title-right h2{
+    text-align: right;
+    color: #b3002d;
+}
+.detail-title-right h3{
+    text-align: right;
+    color: #000000;
+}
+.video {
+    margin: 20px ;
+}
+@media (max-width: 768px) {
+    .video iframe {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+/* description */
+.description-grid {
+    display: grid;
+    background-color:  #fff;
+    grid-gap: 20px;
+    max-width: 1200px;
+    grid-template-columns: 65% 33%;
+    box-shadow: 0 0 2px grey
+    
+}
+.description-item p{
+    margin: 30px;
+
+}
+.description-item h2{
+    color: #b3002d;
+}
+.description-item {
+    text-align: center;
+    color: crimson;
+    padding: 10px;
+    margin: 20px;
+    background-color: #f2f2f2;
+    
+}
+.description-item img {
+    height: auto;
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .description-grid {
+        gap: 5px;
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+
+/* actors pictures block for movies */
+.actors{
+    background-color: #fff;
+    box-shadow: 0 0 2px grey;
+    max-width: 1200px;
+
+}
+.actors-container-title{
+    color: #b3002d;
+    background-color: #fff;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+.actors-container {
+    display: grid;
+    padding: 20px;
+    grid-gap: 20px; 
+    background-color: #fff;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.actors-container-item {
+    text-align: center;
+    color: black;
+    background-color: #f2f2f2ff;
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.actors-container-item a {
+    text-align: center;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.actors-container-item img {
+    height: auto; 
+    max-width: 100%; 
+}
+@media (max-width: 768px) {
+    .actors-container {
+        gap: 5px;
+        grid-template-columns: 50% 50%; 
+    }
+}
+
+
+/*review and stars*/
+
+.reviews {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+    background-color: #fff;
+    max-width: 1200px;
+    box-shadow: 0 0 2px grey;
+
+}
+.reviews label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+}
+.reviews input[type="text"],
+.reviews textarea {
+    width: 100%;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.reviews input[type="submit"]:hover {
+    background-color: #b3002d;
+}
+.reviews input[type="submit"] {
+    cursor: pointer;
+    background-color: crimson;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.rating {
+    text-align: left;
+    margin: 50px auto;
+    max-width: 100%;
+}
+
+.rating label {
+    display: inline-block; 
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+}
+
+.rating > * {
+    float: right;
+}
+
+.rating label::after {
+    font-size: 24px;
+    transition: all 0.4s ease-out;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    content: "☆";
+    color: #444;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    -webkit-animation: 1s pulse ease;
+    animation: 1s pulse ease;
+}
+
+.rating label:hover::after {
+    text-shadow: 0 0 15px grey;
+    color: grey;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating input:checked + label::after,
+.rating input:checked ~ label::after {
+    color: gold;
+    text-shadow: 0 0 20px gold;
+    content: "★";
+}
+
+
+/* added reviews*/
+.added-reviews{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 2px grey;
+}
+.added-reviews h2{
+
+    margin: 30px;
+    color: #b3002d;
+
+}
+.added-reviews-item{
+    margin: 20px;
+    padding: 10px;
+}
+
+/* uitvouwbaar tekstblock */
+
+.text-area {
+    font-size: 15px;
+    margin: 20px;
+    line-height: 1.3;
+    max-width: auto;
+    color: black;
+    text-align: left;
+}
+.read-more-link,
+.read-less-link {
+    cursor: pointer;
+    color: #b3002d;
+}
+
+.read-more-link:hover,
+.read-less-link:hover {
+    text-decoration: underline;
+}
+.txt-long {
+    display: none;
+}
+
+
+
+
+/* actor Page */
+.actor-title{
+    background-color:  #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    box-shadow: 0 0 2px grey;
+    max-width: 1200px;
+
+}
+.actor-grid{
+    display: grid;
+    background-color:  #fff;
+    grid-gap: 20px;
+    grid-template-columns: 33% 65%;
+    box-shadow: 0 0 2px grey;
+}
+.actor-title h1{
+    color: #b3002d;
+    text-align: center;
+}
+
+.actor-item p{
+    margin: 30px;
+
+}
+.actor-item h2{
+    color: #b3002d;
+}
+.actor-item {
+    text-align: center;
+    color: #b3002d;
+    padding: 10px;
+    margin: 20px;
+    background-color: #f2f2f2;
+    
+}
+.actor-item img {
+    height: auto;
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .actor-grid {
+        gap: 5px;
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+
+
+.movies-by-actor{
+    background-color: #fff;
+    box-shadow: 0 0 2px grey;
+    margin-bottom: 20px;
+    max-width: 1200px;
+
+}
+.movies-by-actor-container-title{
+    color: #b3002d;
+    background-color: #fff;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+.movies-by-actor-container {
+    display: grid;
+    padding: 20px;
+    grid-gap: 20px; 
+    background-color: #fff;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.movies-by-actor-container-item {
+    text-align: center;
+    color: black;
+    background-color: #f2f2f2ff;
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.movies-by-actor-container-item img {
+    height: auto; 
+    max-width: 100%; 
+}
+@media (max-width: 768px) {
+    .movies-by-actor-container {
+        gap: 5px;
+        grid-template-columns: 50% 50%; 
+    }
+}
+
+
+/* css for the add-movie page*/
+
+.add-form {
+    margin: 20px auto;
+    box-shadow: 0 0 5px grey;
+    padding: 60px;
+    max-width: auto;
+    background-color: #fff;
+    max-width: 1200px;
+}
+  
+.add-form h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #b3002d;
+}
+  
+.add-form label {
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.add-form input[type="text"],
+.add-form input[type="year"],
+.add-form input[type="number"],
+.add-form select,
+.add-form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    width: 100%;
+}
+.add-form input[type="file"]{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.add-form input[type="submit"]:hover {
+    background-color: #b3002d;
+}
+
+.add-form input[type="submit"] {
+    cursor: pointer;
+    background-color: crimson;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+ 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasna Djuricic</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <div class = wrapper>
+        <header>
+            <h1> EX-YU FILMS </h1>
+            <p>Your Gateway to the Rich Cinematic History of EX-Yugoslavia</p>
+        </header>
+        <nav class="main-nav">
+            <div class=" list">
+                <ul> 
+                    <li><a href="./index.html">Movies</a></li>
+                    <li><a href="./addMovies.html">Add movies</a></li>
+                    <li><a href="./about.html">about</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="actor-title">
+            <h1>Jasna Djuricic</h1> 
+        </div>
+        <div class="actor-grid">
+            <div class="actor-item"> 
+                <img src="css/img/jasnadjuricic.jpg" alt="Image">
+            </div>
+            <div class="actor-item"> 
+                <div>
+                    <h2>Biography</h2>
+                </div>
+                <div class="text-area">
+                    <p class="txt-short">
+                        Jasna Đuričić is a talented Bosnian-Serbian actress known for her remarkable contributions to European cinema. 
+                        She was born on July 23, 1971, in Sarajevo, Bosnia and Herzegovina. 
+                        Jasna Đuričić gained international recognition for her versatile acting skills and has appeared in numerous critically acclaimed films. 
+                        Her captivating performances have earned her awards and nominations, 
+                        making her one of the prominent figures in contemporary European cinema.
+                        <a href="#" class="read-more-link">Read more</a>
+                    </p>
+                    <p class="txt-long">
+                        Jasna Đuričić, born on July 23, 1971, in Sarajevo, Bosnia and Herzegovina, is a highly regarded actress known for her exceptional talent and contributions to the world of cinema. Her career began in the early 1990s, and she quickly gained recognition for her outstanding acting abilities.
+
+                        Đuričić's journey in the world of acting is marked by a commitment to her craft and a dedication to bringing depth and authenticity to her roles. Her performances often transcend language and cultural barriers, resonating with audiences worldwide. Her ability to convey a wide range of emotions and portray complex characters has made her a sought-after actress in both independent and mainstream cinema.
+
+                        Throughout her career, Jasna Đuričić has collaborated with acclaimed directors and filmmakers, participating in projects that explore diverse genres and themes. Her work in films like "Esma's Secret: Grbavica" (2006), directed by Jasmila Žbanić, and "Quo Vadis, Aida?" (2020), directed by Jasmila Žbanić, has received critical acclaim and garnered international attention.
+
+                        "Quo Vadis, Aida?" in particular marked a significant milestone in her career, earning her widespread recognition and accolades. The film, which dealt with the Srebrenica genocide, showcased Đuričić's ability to portray deeply emotional and impactful roles.
+
+                        Jasna Đuričić's contributions to European cinema have been celebrated with awards and nominations. Her commitment to her craft and her ability to tackle challenging and thought-provoking roles have solidified her reputation as a respected figure in the world of acting.
+
+                        Beyond her film work, Jasna Đuričić continues to be an influential presence in the industry, inspiring aspiring actors and filmmakers with her dedication and talent. Her career serves as a testament to the power of storytelling and the impact of exceptional acting on the cinematic landscape.
+                        
+                        <a href="#" class="read-less-link">Show less</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const readMoreLink = document.querySelector(".read-more-link");
+                const readLessLink = document.querySelector(".read-less-link");
+                const shortText = document.querySelector(".txt-short");
+                const fullText = document.querySelector(".txt-long");
+    
+                readMoreLink.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    shortText.style.display = "none";
+                    fullText.style.display = "block";
+                });
+    
+                readLessLink.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    shortText.style.display = "block";
+                    fullText.style.display = "none";
+                });
+            });
+        </script>
+        <div class="movies-by-actor">
+            <div class="movies-by-actor-container-title">
+                <h1>Known for:                </h1>
+            </div>
+            <div class="movies-by-actor-container">
+                <div class="movies-by-actor-container-item">
+                    <img src="css/img/avokado.jpg" alt="Image-1">
+                </div>
+                <div class="movies-by-actor-container-item">
+                    <img src="css/img/belisvet.jpg" alt="Image-2">
+                </div>
+                <div class="movies-by-actor-container-item">
+                    <img src="css/img/grupa.jpg" alt="Image-3">
+                </div>
+                <div class="movies-by-actor-container-item">
+                    <a href="./detailpage1.html"><img src="css/img/aida.jpg" alt="Image-4"></a>
+                </div>
+            </div>
+        </div>   
+        <footer> 
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <p class="about-footer"> <a href="./about.html" style="text-decoration: none;">about</a></p>
+                    <p>Email: exyufilms@gmail.com</p>
+                </div>
+                <div class="social-media">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; EX-YU FILMS 2023</p>
+            </div>
+        </footer>  
+    </div>
+</body>
+</html>

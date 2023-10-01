@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-YU FILMS</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <div class = wrapper>
+    <header>
+        <h1> EX-YU FILMS </h1>
+        <p>Your Gateway to the Rich Cinematic History of EX-Yugoslavia</p>
+    </header>
+    <nav class="main-nav">
+        <div class=" list">
+            <ul> 
+                <li><a href="./about.html">Movies</a></li>
+                <li><a href="./addMovies.html">Add movies</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="carousel">
+        <div id="slideshow" class="slideshow">
+            <div>
+            <img src="css/img/banneraida.png" alt="Quo vadis, Aida?" title="Quo vadis, Aida? ">
+            </div>
+            <div>
+            <img src="css/img/bannerbitka1.png" alt="Battle of the Neretva " title="Battle of the Neretva">
+            </div>
+            <div>
+            <img src="css/img/bannervalter.png" alt="Valter defends Sarajevo" title="Valter defends Sarajevo">
+            </div>
+            <div>
+            <img src="css/img/bannerbitka3.png" alt="Battle of the Neretva " title="Battle of the Neretva">
+            </div>
+            <div>
+            <img src="css/img/bannerkosara.png" alt="Kosara " title="Kosara">
+            </div>
+            <div>
+            <img src="css/img/bannerbitka2.png" alt="Battle of the Neretva " title="Battle of the Neretva">
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+            $(document).ready(function(){
+                $("#slideshow > div:gt(0)").hide();
+
+                setInterval(function() {
+                $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+                }, 3000);
+            })
+            </script>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+        <main class="container">
+            <div class="grid-item">
+                <a href="./detailpage1.html"><img src="css/img/aida.jpg" alt="Image-1"></a>
+                <p>Quo vadis, Aida?</p>
+            </div>
+            <div class="grid-item">
+                <a href="./detailpage2.html"><img src="css/img/bitka.jpg" alt="Image-2"></a>
+                <p> Battle of the Neretva</p>
+            </div>
+            <div class="grid-item">
+                <img src="css/img/valter.jpg" alt="Image-3">
+                <p>Valter defends Sarajevo</p>
+            </div>
+            <div class="grid-item">
+                <img src="css/img/kozara.jpg" alt="Image-4">
+                <p>Kosara</p>
+            </div>
+            <div class="grid-item">
+                <img src="css/img/diverzanti.jpg" alt="Image-5">
+                <p>Diverzanti</p>
+            </div>
+            <div class="grid-item">
+                <img src="css/img/uzicka.jpg" alt="Image-6">
+                <p>Uzicka republika</p>
+            </div>
+            <div class="grid-item">
+                <img src="css/img/sutjeska.jpg" alt="Image-7">
+                <p>Sutjeska</p>
+            </div>
+            <div class="grid-item">
+                <img src="css/img/grbavica.jpg" alt="Image-8">
+                <p>Grbavica</p>
+            </div>
+            <div class="grid-item">
+                <img src="css/img/no-mans-land.jpg" alt="Image-9">
+                <p>No mans land</p>
+            </div>
+            <div class="grid-item">
+                <img src="css/img/krug.jpg" alt="Image-10">
+                <p>The perfect circle</p>
+            </div>
+            <div class="grid-item">
+                <img src="css/img/kosovo.jpg" alt="Image-11">
+                <p>The battle of Kosovo</p>
+            </div>
+            <div class="grid-item">
+                <img src="css/img/rane.jpg" alt="Image-12">
+                <p>Wounds</p>
+            </div>
+        </main>
+        <footer> 
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <p class="about-footer"> <a href="./about.html" style="text-decoration: none;">about</a></p>
+                    <p>Email: exyufilms@gmail.com</p>
+                </div>
+                <div class="social-media">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; EX-YU FILMS 2023</p>
+            </div>
+        </footer>  
+    </div>
+</body>
+</html>

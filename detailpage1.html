@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quo Vadis, Aida?</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <div class = wrapper>
+        <header>
+            <h1> EX-YU FILMS </h1>
+            <p>Your Gateway to the Rich Cinematic History of EX-Yugoslavia</p>
+        </header>
+        <nav class="main-nav">
+            <div class=" list">
+                <ul> 
+                    <li><a href="./index.html">Movies</a></li>
+                    <li><a href="./addMovies.html">Add movies</a></li>
+                    <li><a href="./about.html">about</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class=detail-container>
+            <div class= "detail-title"> 
+                <div class="detail-title-left">
+                    <h1>Quo Vadis, Aida?</h1> 
+                    <h3>Jasmila Zbanic</h3>
+                    <h4>2020 1h 41m</h4>
+                </div>
+                <div class="detail-title-right">
+                    <h2>9.5/10 Guest rating</h2>
+                    <h3>War | Drama | History</h3>
+
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="1020" height="550" src="https://www.youtube.com/embed/ErLD8P4VUjY" 
+                title="QUO VADIS, AIDA? | Official UK Trailer [HD]" frameborder="0" allow="accelerometer; autoplay; c
+                lipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+        </main>
+        <div class="description-grid">
+            <div class="description-item"> 
+                <div>
+                    <h2>Movie description</h2>
+                </div>
+                <div class="text-area">
+                    <p class="txt-short">
+                        "Que Vadis, Aida?" is a powerful and emotionally charged war drama directed by Jasmila Žbanić.
+                        Set against the backdrop of the Bosnian War in the 1990s, the film follows the heartbreaking story of Aida,
+                        a translator working for the UN, as she desperately tries to save her family from the impending Srebrenica genocide.
+                        With gripping performances and heart-wrenching moments, 
+                        this film is a poignant exploration of human resilience and the devastating consequences of war. 
+                        <a href="#" class="read-more-link">Read more</a>
+                    </p>
+                    <p class="txt-long">
+                        "Que Vadis, Aida?" is a haunting and thought-provoking war drama directed by acclaimed filmmaker Jasmila Žbanić.
+                        Set during the brutal Bosnian War in the 1990s, the film tells the harrowing tale of Aida,
+                        a skilled translator working for the United Nations at the UN base in the town of Srebrenica.
+                        As tensions escalate and the war ravages the region, Aida's world is turned upside down.
+                        She desperately tries to ensure the safety of her husband and two sons, who, like many others, 
+                        have sought refuge in the UN compound, hoping for protection from the impending horrors of war.
+                        The film vividly portrays the chaos and desperation that engulfed Srebrenica as the Serbian army advances,
+                        leading to the infamous Srebrenica genocide."Que Vadis, Aida?" offers an intimate and unflinching look at the anguish,
+                        fear, and moral dilemmas faced by Aida as she navigates the bureaucratic complexities of the UN and confronts 
+                        the heartbreaking choices she must make to safeguard her family. The film's compelling narrative is complemented 
+                        by exceptional performances, particularly by Jasna Đuričić,
+                        who portrays Aida with depth and emotional intensity. 
+                        Žbanić's masterful direction and the film's stunning cinematography immerse viewers in the stark reality of war,
+                        making it impossible to turn away from the tragedy unfolding on screen.
+                        Ultimately, "Que Vadis, Aida?"
+                        is a profoundly moving and essential cinematic experience that sheds light on the dark chapter of the Bosnian War.
+                        It serves as a stark reminder of the devastating consequences of conflict, the fragility of human life,
+                        and the enduring strength of the human spirit in the face of unimaginable adversity.
+                        <a href="#" class="read-less-link">Show less</a>
+                    </p>
+                </div>
+            </div>
+            <div class="description-item"> 
+                <img src="css/img/aida.jpg" alt="Image">
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const readMoreLink = document.querySelector(".read-more-link");
+                const readLessLink = document.querySelector(".read-less-link");
+                const shortText = document.querySelector(".txt-short");
+                const fullText = document.querySelector(".txt-long");
+    
+                readMoreLink.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    shortText.style.display = "none";
+                    fullText.style.display = "block";
+                });
+    
+                readLessLink.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    shortText.style.display = "block";
+                    fullText.style.display = "none";
+                });
+            });
+        </script>
+        <div class="actors">
+            <div class="actors-container-title">
+                <h1>Top Cast</h1>
+            </div>
+            <div class="actors-container">
+                <div class="actors-container-item">
+                    <img src="css/img/jasminadjuricic.jpg" alt="Image-1">
+                    <p><a href="actorPage1.html">Jasna Djuricic</a></p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/borisler.jpg" alt="Image-2">
+                    <p> Boris Ler</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/dino.jpg" alt="Image-3">
+                    <p>Dino Bajrovic</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/johan.jpg" alt="Image-4">
+                    <p>Johan Heldenbergh</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/ray.jpg" alt="Image-5">
+                    <p>Raymond Thiry</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/emir.jpg" alt="Image-6">
+                    <p>Emir Hadzihafizbegovic</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/joes.jpg" alt="Image-7">
+                    <p>Joes brauers</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/edita.jpg" alt="Image-8">
+                    <p>Edita Malovcic</p>
+                </div>
+            </div>
+        </div>   
+        <div class="reviews">
+            <h2> Add a review</h2>
+            <form>
+                <label for="name">enter your name:</label>
+                <input type="text" id="name" placeholder="enter">
+                <br>
+                <label for="Your review:">Enter your review </label> <br>
+                <textarea name="review" id="review" cols="30" rows="10" placeholder="enter your review..."></textarea>
+                
+                <div class=" rating">
+                    <input type="radio" name="rating" id="star1">
+                    <label for="star1"></label> 
+                    <input type="radio" name="rating" id="star2">
+                    <label for="star2"></label> 
+                    <input type="radio" name="rating" id="star3">
+                    <label for="star3"></label> 
+                    <input type="radio" name="rating" id="star4">
+                    <label for="star4"></label> 
+                    <input type="radio" name="rating" id="star5">
+                    <label for="star5"></label> 
+                    <input type="radio" name="rating" id="star6">
+                    <label for="star6"></label> 
+                    <input type="radio" name="rating" id="star7">
+                    <label for="star7"></label> 
+                    <input type="radio" name="rating" id="star8">
+                    <label for="star8"></label> 
+                    <input type="radio" name="rating" id="star9">
+                    <label for="star9"></label> 
+                    <input type="radio" name="rating" id="star10">
+                    <label for="star10"></label> 
+                </div>
+    
+                <input type="submit" value="submit the review">
+            </form>
+        </div>
+        <div class="added-reviews">
+            <h2> Reviews</h2>
+            <div class="added-reviews-item">
+                <h3> Carl Eiswerth (10/10)</h3>
+                <p> Quo Vadis, Aida?" is a cinematic masterpiece. <br>
+                    Its gripping storytelling, powerful performances,
+                    and meticulous direction create a visceral experience. <br>
+                    Aida's unwavering determination amidst chaos is both heart-wrenching and inspiring. <br>
+                    This film masterfully explores the complexities of war and human resilience.
+                    A must-watch that leaves a profound impact.
+                </p>
+
+            </div>
+            <div class="added-reviews-item">
+                <h3> Joama bababooy (8/10)</h3>
+                <p>"Quo Vadis, Aida?" is a cinematic gem that immerses viewers in the heart of wartime tragedy. <br>
+                    The film's raw emotion, coupled with superb acting, paints a hauntingly authentic picture of the Bosnian conflict. <br>
+                    Aida's harrowing journey is beautifully portrayed, making it a must-see for its moving storytelling and historical significance. <br>
+                    An exceptional film that lingers in the mind long after the credits roll.
+                </p>
+            </div>
+        </div>
+        <footer> 
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <p class="about-footer"> <a href="./about.html" style="text-decoration: none;">about</a></p>
+                    <p>Email: exyufilms@gmail.com</p>
+                </div>
+                <div class="social-media">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; EX-YU FILMS 2023</p>
+            </div>
+        </footer>  
+    </div>
+</body>
+</html>

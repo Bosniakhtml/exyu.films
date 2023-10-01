@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-YU FILMS</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <div class = wrapper>
+        <header>
+            <h1> EX-YU FILMS </h1>
+            <p>Your Gateway to the Rich Cinematic History of EX-Yugoslavia</p>
+        </header>
+        <nav class="main-nav">
+            <div class=" list">
+                <ul> 
+                    <li><a href="./index.html">Movies</a></li>
+                    <li><a href="./addMovies.html">Add movies</a></li>
+                    <li><a href="./about.html">about</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="add-form">
+            <h1> Add a movie</h1>
+            <form>
+                <label for="moviename">Enter movie name:</label>
+                <input type="text" id="moviename" placeholder="enter">
+                <br>
+                <label for="directorname">Enter director name:</label>
+                <input type="text" id="directorname" placeholder="enter">
+                <br>
+                <label for="moviedate">Enter the movies year of release:</label>
+                <input type="year" id="moviedate" placeholder="enter">
+                <br>
+                <label for="runtime">Enter the movies runtime in minutes:</label>
+                <input type="number" id="runtime" placeholder="enter">
+                <br>
+                <label for="movielabel">What genre is the movie?</label>
+                <select name="question" id="question">
+                    <option value="q1">Horror</option>
+                    <option value="q2">War</option>
+                    <option value="q3">Drama</option>
+                    <option value="q4">History</option>
+                    <option value="q5">Action</option>
+                    <option value="q6">Comedy</option>
+                    <option value="q7">Romance</option>
+                    <option value="q8">Thriller</option>
+                    <option value="q9">Documentary</option>
+        
+                    <br><br>
+        
+                    <label for="movieDescription">Enter the movie description:</label> <br>
+                    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="description..."></textarea>
+        
+                    <br> <br>
+
+                    <label for="image">Give the poster of the movie:</label>
+                    <input type="file" placeholder="enter">
+
+                    <br> <br>
+        
+                    <input type="submit" value="submit the movie">
+        
+        
+        
+                </select>
+            </form>
+        </main>
+        <footer> 
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <p class="about-footer"> <a href="./about.html" style="text-decoration: none;">about</a></p>
+                    <p>Email: exyufilms@gmail.com</p>
+                </div>
+                <div class="social-media">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; EX-YU FILMS 2023</p>
+            </div>
+        </footer>  
+    </div>
+    
+</body>
+</html>

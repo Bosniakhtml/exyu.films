@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Of The Neretva</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <div class = wrapper>
+        <header>
+            <h1> EX-YU FILMS </h1>
+            <p>Your Gateway to the Rich Cinematic History of EX-Yugoslavia</p>
+        </header>
+        <nav class="main-nav">
+            <div class=" list">
+                <ul> 
+                    <li><a href="./index.html">Movies</a></li>
+                    <li><a href="./addMovies.html">Add movies</a></li>
+                    <li><a href="./about.html">about</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class=detail-container>
+            <div class= "detail-title"> 
+                <div class="detail-title-left">
+                    <h1>Battle Of The Neretva</h1> 
+                    <h3>Veljko Bulajic</h3>
+                    <h4>1969 2h 55m</h4>
+                </div>
+                <div class="detail-title-right">
+                    <h2>7.5/10 Guest rating</h2>
+                    <h3>History | War</h3>
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="1020" height="550" src="https://www.youtube.com/embed/rb-oAuhjGlo" 
+                title="Bitka na Neretvi trailer" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+            </div>
+        </main>
+        <div class="description-grid">
+            <div class="description-item"> 
+                <div>
+                    <h2>Movie description</h2>
+                </div>
+                <div class="text-area">
+                    <p class="txt-short">
+                        "Bitka na Neretvi" (The Battle of Neretva) is a classic war film directed by Veljko Bulajić. 
+                        Set against the backdrop of World War II, 
+                        the movie depicts the epic battle that took place along the Neretva River in Yugoslavia.
+                        It follows the struggle of partisan forces as they attempt to escape the encirclement of the German army,
+                        facing numerous challenges and hardships. With a stellar ensemble cast and stunning cinematography, "Bitka na Neretvi" 
+                        is a gripping war drama that explores the resilience and sacrifice of those who fought in one of the most challenging battles of the war.
+                        <a href="#" class="read-more-link">Read more</a>
+                    </p>
+                    <p class="txt-long">
+                        "Bitka na Neretvi" (The Battle of Neretva) is a monumental war film directed by Veljko Bulajić, released in 1969. It stands as one of the most ambitious productions in Yugoslav cinema history and is renowned for its grand scale and epic storytelling.
+
+                        The film is set during World War II and portrays the dramatic events surrounding the Battle of Neretva, a pivotal conflict between the Yugoslav Partisans and the Axis forces. The battle, fought in the unforgiving terrain of Bosnia and Herzegovina along the Neretva River, was a crucial turning point in the war in Yugoslavia.
+                        
+                        The storyline revolves around the Partisan resistance fighters led by Josip Broz Tito (played by Richard Burton), who find themselves encircled by the relentless German and Italian forces, led by General Löhr (played by Hardy Krüger) and Field Marshal von Weichs (played by Franco Nero). As the battle rages on, the Partisans face numerous challenges, including the need to secure a safe escape route for wounded civilians and soldiers.
+                        
+                        "Bitka na Neretvi" is a masterful exploration of the human spirit in times of war, emphasizing themes of courage, sacrifice, and solidarity. The film boasts a stellar international cast, including Yul Brynner as Vlado, Orson Welles as Chetnik Chetah, and Curd Jürgens as von Dietrich, among others. Their performances contribute to the emotional depth of the characters and the narrative.
+                        
+                        What sets this film apart is its remarkable cinematography and special effects, showcasing the grandeur of the Yugoslav landscape, with stunning visuals of the Neretva River and its surroundings. The battle scenes are meticulously choreographed and executed, immersing the audience in the chaos and brutality of war.
+                        
+                        "Bitka na Neretvi" is not only a war epic but also a tribute to the resilience and sacrifice of those who fought in one of the most challenging battles of World War II. Its enduring legacy continues to captivate audiences, making it a significant entry in the pantheon of war cinema.
+                        <a href="#" class="read-less-link">Show less</a>
+                    </p>
+                </div>
+            </div>
+            <div class="description-item"> 
+                <img src="css/img/bitka.jpg" alt="Image">
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const readMoreLink = document.querySelector(".read-more-link");
+                const readLessLink = document.querySelector(".read-less-link");
+                const shortText = document.querySelector(".txt-short");
+                const fullText = document.querySelector(".txt-long");
+    
+                readMoreLink.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    shortText.style.display = "none";
+                    fullText.style.display = "block";
+                });
+    
+                readLessLink.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    shortText.style.display = "block";
+                    fullText.style.display = "none";
+                });
+            });
+        </script>
+        <div class="actors">
+            <div class="actors-container-title">
+                <h1>Top Cast</h1>
+            </div>
+            <div class="actors-container">
+                <div class="actors-container-item">
+                    <img src="css/img/Yul.jpg" alt="Image-1">
+                    <p><a href="actorPage2.html">Yul Brynner</a></p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/Curd.jpg" alt="Image-2">
+                    <p> Curd Jürgens</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/anthony.jpg" alt="Image-3">
+                    <p>Anthony Dawson</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/ljubisa.jpg" alt="Image-4">
+                    <p>Ljubisa Samardzic</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/franco.jpg" alt="Image-5">
+                    <p>Franco Nero</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/hardy.jpg" alt="Image-6">
+                    <p> Hardy Krüger</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/sergey.jpg"alt="Image-7">
+                    <p>Sergey Bondarchuk</p>
+                </div>
+                <div class="actors-container-item">
+                    <img src="css/img/orson.jpg" alt="Image-8">
+                    <p>Orson Welles</p>
+                </div>
+            </div>
+        </div>   
+        <div class="reviews">
+            <h2> Add a review</h2>
+            <form>
+                <label for="name">enter your name:</label>
+                <input type="text" id="name" placeholder="enter">
+                <br>
+                <label for="Your review:">Enter your review </label> <br>
+                <textarea name="review" id="review" cols="30" rows="10" placeholder="enter your review..."></textarea>
+                
+                <div class=" rating">
+                    <input type="radio" name="rating" id="star1">
+                    <label for="star1"></label> 
+                    <input type="radio" name="rating" id="star2">
+                    <label for="star2"></label> 
+                    <input type="radio" name="rating" id="star3">
+                    <label for="star3"></label> 
+                    <input type="radio" name="rating" id="star4">
+                    <label for="star4"></label> 
+                    <input type="radio" name="rating" id="star5">
+                    <label for="star5"></label> 
+                    <input type="radio" name="rating" id="star6">
+                    <label for="star6"></label> 
+                    <input type="radio" name="rating" id="star7">
+                    <label for="star7"></label> 
+                    <input type="radio" name="rating" id="star8">
+                    <label for="star8"></label> 
+                    <input type="radio" name="rating" id="star9">
+                    <label for="star9"></label> 
+                    <input type="radio" name="rating" id="star10">
+                    <label for="star10"></label> 
+                </div>
+    
+                <input type="submit" value="submit the review">
+            </form>
+        </div>
+        <div class="added-reviews">
+            <h2> Reviews</h2>
+            <div class="added-reviews-item">
+                <h3> Nega Balzic (5/10)</h3>
+                <p> "Bitka na Neretvi" is a film of contrasts,
+                    earning a middling 5/10. Veljko Bulajić's WWII 
+                    epic impresses with breathtaking cinematography and a star-studded cast, 
+                    including Yul Brynner and Orson Welles. However, its uneven pacing hampers engagement, 
+                    and the disjointed narrative struggles to deliver a cohesive message. While honoring wartime heroes, 
+                    character development remains shallow, and the script fails to delve into their complexities. 
+                    Bernard Herrmann's score stands out, injecting emotion into select moments. In summary, "Bitka na Neretvi" 
+                    boasts strengths but falls short of realizing its full potential,
+                    appealing primarily to history enthusiasts but failing to achieve a higher rating.
+                </p>
+
+            </div>
+            <div class="added-reviews-item">
+                <h3> Josip Broz Tito (10/10)</h3>
+                <p>
+                    "Bitka na Neretvi" is a cinematic gem, earning a perfect 10/10. Veljko Bulajić's epic war film,
+                    set in WWII Yugoslavia, captivates with its breathtaking cinematography,
+                    heroic ensemble cast including Yul Brynner and Orson Welles, and a moving score by Bernard Herrmann.
+                    It's more than a war movie; it's a tribute to human resilience and valor. 
+                    This timeless classic remains a testament to the indomitable human spirit. With its powerful storytelling, exceptional performances, and historical significance, 
+                    "Bitka na Neretvi" rightfully deserves its perfect score and is a must-watch for all cinephiles.
+                </p>
+            </div>
+        </div>
+        <footer> 
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <p class="about-footer"> <a href="./about.html" style="text-decoration: none;">about</a></p>
+                    <p>Email: exyufilms@gmail.com</p>
+                </div>
+                <div class="social-media">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; EX-YU FILMS 2023</p>
+            </div>
+        </footer>  
+    </div>
+</body>
+</html>
